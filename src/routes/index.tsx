@@ -239,7 +239,7 @@ Detalhes: ${form.detalhes}`;
               Nossos serviços
             </p>
             <h2 className="mt-2 text-3xl font-extrabold uppercase sm:text-4xl">
-              Soluções completas em transporte
+              Serviços para pequenas cargas
             </h2>
           </div>
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
