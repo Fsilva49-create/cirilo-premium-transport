@@ -175,7 +175,7 @@ Detalhes: ${form.detalhes}`;
           </button>
         </div>
         {open && (
-          <nav className="animate-fade-in border-t border-border bg-background px-5 py-3 md:hidden">
+          <nav className="border-t border-border bg-background px-5 py-3 md:hidden">
             {nav.map((n) => (
               <a
                 key={n.href}
@@ -528,7 +528,7 @@ Detalhes: ${form.detalhes}`;
         target="_blank"
         rel="noreferrer"
         aria-label="Falar no WhatsApp"
-        className="fixed right-5 bottom-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-premium transition-transform hover:scale-110"
+        className="fixed right-5 bottom-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-whatsapp text-navy-foreground shadow-premium transition-transform hover:scale-110"
       >
         <MessageCircle className="h-7 w-7" />
       </a>
