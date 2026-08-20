@@ -3,7 +3,7 @@ import { useState } from "react";
 import {
   Truck,
   Package,
-  Warehouse,
+  ShoppingBag,
   Route as RouteIcon,
   ShieldCheck,
   Clock,
@@ -13,27 +13,26 @@ import {
   Menu,
   X,
   MessageCircle,
+  Home,
 } from "lucide-react";
 
 import logoAsset from "@/assets/logo-cirilo.png.asset.json";
 import vanAsset from "@/assets/van-cirilo.png.asset.json";
-import caminhaoImg from "@/assets/frota-caminhao.jpg";
-import carretaImg from "@/assets/frota-carreta.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Cirilo Transportes | Transporte de Cargas e Logística" },
+      { title: "Cirilo Transportes | Frete Fiorino em São Paulo" },
       {
         name: "description",
         content:
-          "Transporte de cargas em todo o Brasil com frota própria, rastreamento e pontualidade. Peça seu orçamento com a Cirilo Transportes.",
+          "Frete rápido e seguro com Fiorino para e-commerce, pequenas mudanças e entregas urbanas. Atendimento em São Paulo e região. Peça seu orçamento.",
       },
-      { property: "og:title", content: "Cirilo Transportes | Transporte de Cargas e Logística" },
+      { property: "og:title", content: "Cirilo Transportes | Frete Fiorino em São Paulo" },
       {
         property: "og:description",
         content:
-          "Frota própria, cargas rastreadas e entregas no prazo. Solicite um orçamento sem compromisso.",
+          "Frete Fiorino para pequenas cargas, entregas e mudanças locais. Orçamento rápido pelo WhatsApp.",
       },
     ],
   }),
@@ -46,55 +45,43 @@ const waLink = (msg: string) =>
 
 const servicos = [
   {
+    icon: ShoppingBag,
+    title: "Entregas para E-commerce",
+    desc: "Coleta e entrega de pedidos, mercadorias e encomendas para lojas virtuais e marketplaces.",
+  },
+  {
     icon: Truck,
-    title: "Cargas Dedicadas",
-    desc: "Veículo exclusivo para sua carga, com rota direta e prazo garantido.",
+    title: "Frete Fiorino Dedicado",
+    desc: "Veículo exclusivo para sua carga, com agilidade em rotas urbanas e prazo combinado.",
   },
   {
     icon: Package,
-    title: "Fracionado",
-    desc: "Economia para volumes menores com coletas e entregas programadas.",
+    title: "Pequenas Mudanças",
+    desc: "Transporte de móveis, eletrodomésticos e caixas para apartamentos e escritórios.",
   },
   {
     icon: RouteIcon,
-    title: "Mudanças e Transferências",
-    desc: "Equipe treinada, embalagem e içamento para mudanças residenciais e comerciais.",
-  },
-  {
-    icon: Warehouse,
-    title: "Armazenagem",
-    desc: "Estrutura segura para guarda de mercadorias e cross-docking.",
+    title: "Coletas Programadas",
+    desc: "Rotas recorrentes para empresas que precisam de regularidade sem terceirizar tudo.",
   },
   {
     icon: ShieldCheck,
-    title: "Carga Segurada",
-    desc: "Toda operação com seguro de carga e monitoramento em tempo real.",
+    title: "Carga Segura",
+    desc: "Cuidado no embarque e descarga, com seguro de carga e acompanhamento da viagem.",
   },
   {
     icon: Clock,
     title: "Entregas Urgentes",
-    desc: "Atendimento expresso 24h para demandas emergenciais.",
+    desc: "Atendimento expresso para demandas de última hora dentro da cidade e região.",
   },
 ];
 
 const frota = [
   {
     img: vanAsset.url,
-    nome: "Fiorino / Utilitários",
+    nome: "Fiat Fiorino",
     cap: "Até 650 kg",
-    desc: "Ideal para entregas rápidas urbanas e cargas de pequeno porte.",
-  },
-  {
-    img: caminhaoImg,
-    nome: "Caminhão Baú",
-    cap: "Até 8 toneladas",
-    desc: "Perfeito para distribuição regional e mudanças completas.",
-  },
-  {
-    img: carretaImg,
-    nome: "Carreta / Truck",
-    cap: "Até 30 toneladas",
-    desc: "Transporte de longa distância para grandes volumes.",
+    desc: "Veículo compacto, ágil no trânsito urbano e ideal para entregas rápidas e pequenas cargas.",
   },
 ];
 
