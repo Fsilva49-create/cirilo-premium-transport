@@ -13,7 +13,7 @@ import {
   Menu,
   X,
   MessageCircle,
-  Home,
+  Home as HomeIcon,
 } from "lucide-react";
 
 import logoAsset from "@/assets/logo-cirilo.png.asset.json";
