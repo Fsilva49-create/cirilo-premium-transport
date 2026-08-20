@@ -184,14 +184,14 @@ Detalhes: ${form.detalhes}`;
           <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 md:grid-cols-2 md:py-24">
             <div>
               <span className="inline-flex items-center gap-2 rounded-full border border-navy-foreground/25 px-3 py-1 text-xs font-semibold tracking-wide uppercase">
-                Frota própria · Cobertura nacional
+                Fiorino própria · Atendimento em São Paulo e região
               </span>
               <h1 className="mt-5 text-4xl leading-[1.05] font-extrabold uppercase sm:text-5xl md:text-6xl">
-                Sua carga no destino certo, sempre no prazo
+                Frete rápido para quem começou a crescer
               </h1>
               <p className="mt-5 max-w-lg text-base text-navy-foreground/80">
-                A Cirilo Transportes conecta empresas e pessoas em todo o Brasil com
-                segurança, rastreamento em tempo real e atendimento próximo.
+                A Cirilo Transportes é especializada em pequenas cargas, entregas urbanas e
+                mudanças locais com Fiorino. Atendimento próximo, preço justo e cuidado do início ao fim.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
@@ -201,7 +201,7 @@ Detalhes: ${form.detalhes}`;
                   Solicitar orçamento
                 </a>
                 <a
-                  href={waLink("Olá! Quero falar sobre um transporte.")}
+                  href={waLink("Olá! Quero falar sobre um frete com Fiorino.")}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-md border border-navy-foreground/30 px-6 py-3 text-sm font-bold transition-colors hover:bg-navy-foreground/10"
@@ -211,9 +211,9 @@ Detalhes: ${form.detalhes}`;
               </div>
               <dl className="mt-10 grid grid-cols-3 gap-4 border-t border-navy-foreground/15 pt-6">
                 {[
-                  ["+15", "anos de estrada"],
-                  ["+40", "veículos na frota"],
-                  ["98%", "entregas no prazo"],
+                  ["Fiorino", "própria e nova"],
+                  ["100%", "foco em pequenas cargas"],
+                  ["Rápido", "atendimento no WhatsApp"],
                 ].map(([n, l]) => (
                   <div key={l}>
                     <dt className="font-display text-3xl font-extrabold">{n}</dt>
@@ -224,7 +224,7 @@ Detalhes: ${form.detalhes}`;
             </div>
             <img
               src={vanAsset.url}
-              alt="Van da frota Cirilo Transportes"
+              alt="Fiorino da Cirilo Transportes"
               width={1024}
               height={700}
               className="animate-float w-full drop-shadow-2xl"
