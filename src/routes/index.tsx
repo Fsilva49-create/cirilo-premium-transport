@@ -22,17 +22,17 @@ import vanAsset from "@/assets/van-cirilo.png.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Cirilo Transportes | Frete Fiorino em São Paulo" },
+      { title: "Cirilo Transportes | Frete Fiorino em Salvador" },
       {
         name: "description",
         content:
-          "Frete rápido e seguro com Fiorino para e-commerce, pequenas mudanças e entregas urbanas. Atendimento em São Paulo e região. Peça seu orçamento.",
+          "Frete rápido e seguro com Fiorino para e-commerce, pequenas mudanças e entregas urbanas. Atendimento em Salvador e região. Peça seu orçamento.",
       },
-      { property: "og:title", content: "Cirilo Transportes | Frete Fiorino em São Paulo" },
+      { property: "og:title", content: "Cirilo Transportes | Frete Fiorino em Salvador" },
       {
         property: "og:description",
         content:
-          "Frete Fiorino para pequenas cargas, entregas e mudanças locais. Orçamento rápido pelo WhatsApp.",
+          "Frete Fiorino para pequenas cargas, entregas e mudanças locais em Salvador e região. Orçamento rápido pelo WhatsApp.",
       },
     ],
   }),
