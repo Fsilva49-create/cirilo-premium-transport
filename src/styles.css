@@ -211,16 +211,13 @@
   box-shadow: var(--shadow-card);
 }
 
-@utility reveal {
-  opacity: 0;
-  animation: var(--animate-fade-up);
-  animation-timeline: view();
-  animation-range: entry 0% cover 28%;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .reveal {
-    opacity: 1;
-    animation: none;
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal {
+      opacity: 0;
+      animation: var(--animate-fade-up);
+      animation-timeline: view();
+      animation-range: entry 0% cover 30%;
+    }
   }
 }
