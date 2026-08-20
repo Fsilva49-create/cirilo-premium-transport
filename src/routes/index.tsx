@@ -310,7 +310,7 @@ Detalhes: ${form.detalhes}`;
                 própria e a vontade de fazer cada entrega com atenção.
               </p>
               <p className="mt-4 text-muted-foreground">
-                Atendemos e-commerces, comércios, escritórios e famílias em São Paulo e região —
+                Atendemos e-commerces, comércios, escritórios e famílias em Salvador e região —
                 sempre com comunicação direta, pontualidade e respeito pelo que é seu.
               </p>
               <ul className="mt-7 grid gap-3 sm:grid-cols-2">
