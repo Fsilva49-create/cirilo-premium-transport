@@ -3,7 +3,7 @@ import { useState } from "react";
 import {
   Truck,
   Package,
-  Warehouse,
+  ShoppingBag,
   Route as RouteIcon,
   ShieldCheck,
   Clock,
@@ -13,27 +13,26 @@ import {
   Menu,
   X,
   MessageCircle,
+  Home as HomeIcon,
 } from "lucide-react";
 
 import logoAsset from "@/assets/logo-cirilo.png.asset.json";
 import vanAsset from "@/assets/van-cirilo.png.asset.json";
-import caminhaoImg from "@/assets/frota-caminhao.jpg";
-import carretaImg from "@/assets/frota-carreta.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Cirilo Transportes | Transporte de Cargas e Logística" },
+      { title: "Cirilo Transportes | Frete Fiorino em São Paulo" },
       {
         name: "description",
         content:
-          "Transporte de cargas em todo o Brasil com frota própria, rastreamento e pontualidade. Peça seu orçamento com a Cirilo Transportes.",
+          "Frete rápido e seguro com Fiorino para e-commerce, pequenas mudanças e entregas urbanas. Atendimento em São Paulo e região. Peça seu orçamento.",
       },
-      { property: "og:title", content: "Cirilo Transportes | Transporte de Cargas e Logística" },
+      { property: "og:title", content: "Cirilo Transportes | Frete Fiorino em São Paulo" },
       {
         property: "og:description",
         content:
-          "Frota própria, cargas rastreadas e entregas no prazo. Solicite um orçamento sem compromisso.",
+          "Frete Fiorino para pequenas cargas, entregas e mudanças locais. Orçamento rápido pelo WhatsApp.",
       },
     ],
   }),
@@ -46,55 +45,43 @@ const waLink = (msg: string) =>
 
 const servicos = [
   {
+    icon: ShoppingBag,
+    title: "Entregas para E-commerce",
+    desc: "Coleta e entrega de pedidos, mercadorias e encomendas para lojas virtuais e marketplaces.",
+  },
+  {
     icon: Truck,
-    title: "Cargas Dedicadas",
-    desc: "Veículo exclusivo para sua carga, com rota direta e prazo garantido.",
+    title: "Frete Fiorino Dedicado",
+    desc: "Veículo exclusivo para sua carga, com agilidade em rotas urbanas e prazo combinado.",
   },
   {
     icon: Package,
-    title: "Fracionado",
-    desc: "Economia para volumes menores com coletas e entregas programadas.",
+    title: "Pequenas Mudanças",
+    desc: "Transporte de móveis, eletrodomésticos e caixas para apartamentos e escritórios.",
   },
   {
     icon: RouteIcon,
-    title: "Mudanças e Transferências",
-    desc: "Equipe treinada, embalagem e içamento para mudanças residenciais e comerciais.",
-  },
-  {
-    icon: Warehouse,
-    title: "Armazenagem",
-    desc: "Estrutura segura para guarda de mercadorias e cross-docking.",
+    title: "Coletas Programadas",
+    desc: "Rotas recorrentes para empresas que precisam de regularidade sem terceirizar tudo.",
   },
   {
     icon: ShieldCheck,
-    title: "Carga Segurada",
-    desc: "Toda operação com seguro de carga e monitoramento em tempo real.",
+    title: "Carga Segura",
+    desc: "Cuidado no embarque e descarga, com seguro de carga e acompanhamento da viagem.",
   },
   {
     icon: Clock,
     title: "Entregas Urgentes",
-    desc: "Atendimento expresso 24h para demandas emergenciais.",
+    desc: "Atendimento expresso para demandas de última hora dentro da cidade e região.",
   },
 ];
 
 const frota = [
   {
     img: vanAsset.url,
-    nome: "Fiorino / Utilitários",
+    nome: "Fiat Fiorino",
     cap: "Até 650 kg",
-    desc: "Ideal para entregas rápidas urbanas e cargas de pequeno porte.",
-  },
-  {
-    img: caminhaoImg,
-    nome: "Caminhão Baú",
-    cap: "Até 8 toneladas",
-    desc: "Perfeito para distribuição regional e mudanças completas.",
-  },
-  {
-    img: carretaImg,
-    nome: "Carreta / Truck",
-    cap: "Até 30 toneladas",
-    desc: "Transporte de longa distância para grandes volumes.",
+    desc: "Veículo compacto, ágil no trânsito urbano e ideal para entregas rápidas e pequenas cargas.",
   },
 ];
 
@@ -197,14 +184,14 @@ Detalhes: ${form.detalhes}`;
           <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 md:grid-cols-2 md:py-24">
             <div>
               <span className="inline-flex items-center gap-2 rounded-full border border-navy-foreground/25 px-3 py-1 text-xs font-semibold tracking-wide uppercase">
-                Frota própria · Cobertura nacional
+                Fiorino própria · Atendimento em São Paulo e região
               </span>
               <h1 className="mt-5 text-4xl leading-[1.05] font-extrabold uppercase sm:text-5xl md:text-6xl">
-                Sua carga no destino certo, sempre no prazo
+                Frete rápido para quem começou a crescer
               </h1>
               <p className="mt-5 max-w-lg text-base text-navy-foreground/80">
-                A Cirilo Transportes conecta empresas e pessoas em todo o Brasil com
-                segurança, rastreamento em tempo real e atendimento próximo.
+                A Cirilo Transportes é especializada em pequenas cargas, entregas urbanas e
+                mudanças locais com Fiorino. Atendimento próximo, preço justo e cuidado do início ao fim.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
@@ -214,7 +201,7 @@ Detalhes: ${form.detalhes}`;
                   Solicitar orçamento
                 </a>
                 <a
-                  href={waLink("Olá! Quero falar sobre um transporte.")}
+                  href={waLink("Olá! Quero falar sobre um frete com Fiorino.")}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-md border border-navy-foreground/30 px-6 py-3 text-sm font-bold transition-colors hover:bg-navy-foreground/10"
@@ -224,9 +211,9 @@ Detalhes: ${form.detalhes}`;
               </div>
               <dl className="mt-10 grid grid-cols-3 gap-4 border-t border-navy-foreground/15 pt-6">
                 {[
-                  ["+15", "anos de estrada"],
-                  ["+40", "veículos na frota"],
-                  ["98%", "entregas no prazo"],
+                  ["Fiorino", "própria e nova"],
+                  ["100%", "foco em pequenas cargas"],
+                  ["Rápido", "atendimento no WhatsApp"],
                 ].map(([n, l]) => (
                   <div key={l}>
                     <dt className="font-display text-3xl font-extrabold">{n}</dt>
@@ -237,7 +224,7 @@ Detalhes: ${form.detalhes}`;
             </div>
             <img
               src={vanAsset.url}
-              alt="Van da frota Cirilo Transportes"
+              alt="Fiorino da Cirilo Transportes"
               width={1024}
               height={700}
               className="animate-float w-full drop-shadow-2xl"
@@ -252,7 +239,7 @@ Detalhes: ${form.detalhes}`;
               Nossos serviços
             </p>
             <h2 className="mt-2 text-3xl font-extrabold uppercase sm:text-4xl">
-              Soluções completas em transporte
+              Serviços para pequenas cargas
             </h2>
           </div>
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -277,22 +264,22 @@ Detalhes: ${form.detalhes}`;
             <div className="reveal max-w-2xl">
               <p className="text-sm font-bold tracking-widest text-primary uppercase">Frota</p>
               <h2 className="mt-2 text-3xl font-extrabold uppercase sm:text-4xl">
-                Veículos para cada tipo de carga
+                Nossa Fiorino: ágil, econômica e segura
               </h2>
             </div>
-            <div className="mt-10 grid gap-6 md:grid-cols-3">
+            <div className="mt-10 grid gap-6 md:grid-cols-1">
               {frota.map((f) => (
                 <article
                   key={f.nome}
-                  className="reveal overflow-hidden rounded-xl border border-border bg-card shadow-card transition-transform hover:-translate-y-1"
+                  className="reveal mx-auto w-full max-w-xl overflow-hidden rounded-xl border border-border bg-card shadow-card transition-transform hover:-translate-y-1"
                 >
-                  <div className="flex h-48 items-center justify-center overflow-hidden bg-background">
+                  <div className="flex h-64 items-center justify-center overflow-hidden bg-background">
                     <img
                       src={f.img}
                       alt={f.nome}
                       loading="lazy"
                       width={1024}
-                      height={768}
+                      height={700}
                       className="h-full w-full object-contain p-3"
                     />
                   </div>
@@ -315,23 +302,23 @@ Detalhes: ${form.detalhes}`;
             <div className="reveal">
               <p className="text-sm font-bold tracking-widest text-primary uppercase">Sobre nós</p>
               <h2 className="mt-2 text-3xl font-extrabold uppercase sm:text-4xl">
-                Uma transportadora feita de confiança
+                Começando com o pé direito e muito cuidado
               </h2>
               <p className="mt-5 text-muted-foreground">
-                Nascemos como uma empresa familiar e crescemos junto com nossos clientes. Hoje
-                operamos com frota própria, motoristas experientes e tecnologia de rastreamento,
-                mantendo o mesmo cuidado do primeiro dia com cada volume transportado.
+                A Cirilo Transportes nasceu do desejo de oferecer um frete mais próximo, honesto e
+                ágil para quem precisa transportar cargas de pequeno porte. Começamos com uma Fiorino
+                própria e a vontade de fazer cada entrega com atenção.
               </p>
               <p className="mt-4 text-muted-foreground">
-                Atendemos indústrias, comércios, e-commerces e famílias em mudanças — sempre com
-                comunicação direta e transparente do embarque à entrega.
+                Atendemos e-commerces, comércios, escritórios e famílias em São Paulo e região —
+                sempre com comunicação direta, pontualidade e respeito pelo que é seu.
               </p>
               <ul className="mt-7 grid gap-3 sm:grid-cols-2">
                 {[
-                  "Motoristas próprios e treinados",
-                  "Rastreamento via satélite",
-                  "Seguro total de carga",
-                  "Atendimento 24 horas",
+                  "Fiorino própria e nova",
+                  "Motorista experiente",
+                  "Seguro de carga",
+                  "Atendimento pelo WhatsApp",
                 ].map((i) => (
                   <li key={i} className="flex items-center gap-2 text-sm font-medium">
                     <ShieldCheck className="h-4 w-4 shrink-0 text-primary" />
@@ -341,11 +328,11 @@ Detalhes: ${form.detalhes}`;
               </ul>
             </div>
             <img
-              src={carretaImg}
-              alt="Carreta da Cirilo Transportes em rodovia"
+              src={vanAsset.url}
+              alt="Fiorino da Cirilo Transportes"
               loading="lazy"
               width={1024}
-              height={768}
+              height={700}
               className="reveal w-full rounded-xl object-cover shadow-premium"
             />
           </div>
