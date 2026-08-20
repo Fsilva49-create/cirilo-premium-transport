@@ -39,7 +39,7 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
-const WHATSAPP = "5511999999999";
+const WHATSAPP = "5571992354248";
 const waLink = (msg: string) =>
   `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`;
 
