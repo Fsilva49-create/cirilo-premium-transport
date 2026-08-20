@@ -184,7 +184,7 @@ Detalhes: ${form.detalhes}`;
           <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 md:grid-cols-2 md:py-24">
             <div>
               <span className="inline-flex items-center gap-2 rounded-full border border-navy-foreground/25 px-3 py-1 text-xs font-semibold tracking-wide uppercase">
-                Fiorino própria · Atendimento em São Paulo e região
+                Fiorino própria · Atendimento em Salvador e região
               </span>
               <h1 className="mt-5 text-4xl leading-[1.05] font-extrabold uppercase sm:text-5xl md:text-6xl">
                 Frete rápido para quem começou a crescer
