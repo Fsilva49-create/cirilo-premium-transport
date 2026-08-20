@@ -502,7 +502,7 @@ Detalhes: ${form.detalhes}`;
             className="h-14 w-auto brightness-0 invert"
           />
           <p className="text-sm text-navy-foreground/70">
-            Transporte de cargas, mudanças e logística em todo o Brasil.
+            Frete e pequenas mudanças em Salvador e região.
           </p>
           <p className="text-xs text-navy-foreground/50">
             © {new Date().getFullYear()} Cirilo Transportes. Todos os direitos reservados.
