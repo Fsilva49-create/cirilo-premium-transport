@@ -431,7 +431,7 @@ Detalhes: ${form.detalhes}`;
                 {
                   icon: Phone,
                   label: "Telefone / WhatsApp",
-                  value: "(11) 99999-9999",
+                  value: "(71) 99235-4248",
                   href: waLink("Olá! Preciso de um transporte."),
                 },
                 {
@@ -443,7 +443,7 @@ Detalhes: ${form.detalhes}`;
                 {
                   icon: MapPin,
                   label: "Endereço",
-                  value: "Av. das Indústrias, 1200 — São Paulo, SP",
+                  value: "Rua da Matriz, 333 — Valéria, Salvador, BA",
                   href: "#mapa",
                 },
                 {
