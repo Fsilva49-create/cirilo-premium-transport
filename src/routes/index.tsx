@@ -302,23 +302,23 @@ Detalhes: ${form.detalhes}`;
             <div className="reveal">
               <p className="text-sm font-bold tracking-widest text-primary uppercase">Sobre nós</p>
               <h2 className="mt-2 text-3xl font-extrabold uppercase sm:text-4xl">
-                Uma transportadora feita de confiança
+                Começando com o pé direito e muito cuidado
               </h2>
               <p className="mt-5 text-muted-foreground">
-                Nascemos como uma empresa familiar e crescemos junto com nossos clientes. Hoje
-                operamos com frota própria, motoristas experientes e tecnologia de rastreamento,
-                mantendo o mesmo cuidado do primeiro dia com cada volume transportado.
+                A Cirilo Transportes nasceu do desejo de oferecer um frete mais próximo, honesto e
+                ágil para quem precisa transportar cargas de pequeno porte. Começamos com uma Fiorino
+                própria e a vontade de fazer cada entrega com atenção.
               </p>
               <p className="mt-4 text-muted-foreground">
-                Atendemos indústrias, comércios, e-commerces e famílias em mudanças — sempre com
-                comunicação direta e transparente do embarque à entrega.
+                Atendemos e-commerces, comércios, escritórios e famílias em São Paulo e região —
+                sempre com comunicação direta, pontualidade e respeito pelo que é seu.
               </p>
               <ul className="mt-7 grid gap-3 sm:grid-cols-2">
                 {[
-                  "Motoristas próprios e treinados",
-                  "Rastreamento via satélite",
-                  "Seguro total de carga",
-                  "Atendimento 24 horas",
+                  "Fiorino própria e nova",
+                  "Motorista experiente",
+                  "Seguro de carga",
+                  "Atendimento pelo WhatsApp",
                 ].map((i) => (
                   <li key={i} className="flex items-center gap-2 text-sm font-medium">
                     <ShieldCheck className="h-4 w-4 shrink-0 text-primary" />
@@ -328,11 +328,11 @@ Detalhes: ${form.detalhes}`;
               </ul>
             </div>
             <img
-              src={carretaImg}
-              alt="Carreta da Cirilo Transportes em rodovia"
+              src={vanAsset.url}
+              alt="Fiorino da Cirilo Transportes"
               loading="lazy"
               width={1024}
-              height={768}
+              height={700}
               className="reveal w-full rounded-xl object-cover shadow-premium"
             />
           </div>
