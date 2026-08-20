@@ -264,22 +264,22 @@ Detalhes: ${form.detalhes}`;
             <div className="reveal max-w-2xl">
               <p className="text-sm font-bold tracking-widest text-primary uppercase">Frota</p>
               <h2 className="mt-2 text-3xl font-extrabold uppercase sm:text-4xl">
-                Veículos para cada tipo de carga
+                Nossa Fiorino: ágil, econômica e segura
               </h2>
             </div>
-            <div className="mt-10 grid gap-6 md:grid-cols-3">
+            <div className="mt-10 grid gap-6 md:grid-cols-1">
               {frota.map((f) => (
                 <article
                   key={f.nome}
-                  className="reveal overflow-hidden rounded-xl border border-border bg-card shadow-card transition-transform hover:-translate-y-1"
+                  className="reveal mx-auto w-full max-w-xl overflow-hidden rounded-xl border border-border bg-card shadow-card transition-transform hover:-translate-y-1"
                 >
-                  <div className="flex h-48 items-center justify-center overflow-hidden bg-background">
+                  <div className="flex h-64 items-center justify-center overflow-hidden bg-background">
                     <img
                       src={f.img}
                       alt={f.nome}
                       loading="lazy"
                       width={1024}
-                      height={768}
+                      height={700}
                       className="h-full w-full object-contain p-3"
                     />
                   </div>
